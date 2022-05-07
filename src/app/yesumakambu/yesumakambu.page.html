@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Yesu Nde Makambu Tv</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="Home" icon="home" defaultHref="home">
+        
+      </ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+<ul>
+  <li *ngFor="let program of channel">{{program}}</li>
+</ul>
+</ion-content>

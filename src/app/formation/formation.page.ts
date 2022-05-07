@@ -12,4 +12,6 @@ export class FormationPage implements OnInit {
   ngOnInit() {
   }
 
+
+
 }

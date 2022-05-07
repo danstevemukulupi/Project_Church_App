@@ -1,12 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
       Restoration Church Ministries
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="secondary">
   <ion-card>
     <img src="../../assets/logo.png"/>
     <ion-card-header>
@@ -24,11 +24,14 @@
     
   <ion-card>
     <ion-card-content>
+
+
       <ul>
-        <li [routerLink]="['/service']" routerDirection="forward">Service</li>
-        <li [routerLink]="['/prayer']" routerDirection="forward">Prayer</li>
+        <li [routerLink]="['/service']" routerDirection="forward">Service</li> 
+        <li [routerLink]="['/prayers']" routerDirection="forward">Prayer</li>
         <li [routerLink]="['/formation']" routerDirection="forward">Formation</li>
-        <li [routerLink]="['/events']" routerDirection="forward">Events</li>
+        <li [routerLink]="['/event']" routerDirection="forward">Event</li>
+
       </ul>
     </ion-card-content>
    </ion-card>
@@ -54,7 +57,7 @@
          Yesu Makambo Tv is the main Television of Restoration Church Ministries.There is live preaching and recorded preaching.
 
         </ion-card-content>
-        <ion-button>Learn More</ion-button>
+        <ion-button (click)="openChannelPage()">Learn More</ion-button>
       </ion-card> 
     </ion-col>
 

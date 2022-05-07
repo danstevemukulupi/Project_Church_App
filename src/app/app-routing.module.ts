@@ -15,17 +15,44 @@ const routes: Routes = [
     path: 'service',
     loadChildren: () => import('./service/service.module').then( m => m.ServicePageModule)
   },
+ 
+ 
+ 
   {
-    path: 'prayer',
-    loadChildren: () => import('./prayer/prayer.module').then( m => m.PrayerPageModule)
+    path: 'prayers',
+    loadChildren: () => import('./prayers/prayers.module').then( m => m.PrayersPageModule)
   },
   {
     path: 'formation',
     loadChildren: () => import('./formation/formation.module').then( m => m.FormationPageModule)
   },
   {
-    path: 'events',
-    loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+    path: 'event',
+    loadChildren: () => import('./event/event.module').then( m => m.EventPageModule)
+  },
+  {
+    path: 'yesumakambu',
+    loadChildren: () => import('./yesumakambu/yesumakambu.module').then( m => m.YesumakambuPageModule)
+  },
+  {
+    path: 'daily',
+    loadChildren: () => import('./daily/daily.module').then( m => m.DailyPageModule)
+  },
+  {
+    path: 'ministry',
+    loadChildren: () => import('./ministry/ministry.module').then( m => m.MinistryPageModule)
+  },
+  {
+    path: 'bibles',
+    loadChildren: () => import('./bibles/bibles.module').then( m => m.BiblesPageModule)
+  },
+  {
+    path: 'meditation',
+    loadChildren: () => import('./meditation/meditation.module').then( m => m.MeditationPageModule)
+  },
+  {
+    path: 'healing',
+    loadChildren: () => import('./healing/healing.module').then( m => m.HealingPageModule)
   },
 ];
 
