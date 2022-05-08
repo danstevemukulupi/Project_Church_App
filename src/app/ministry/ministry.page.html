@@ -1,9 +1,66 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>ministry</ion-title>
+  <ion-toolbar color="danger">
+    <ion-title>Ministry</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="Home" icon="home" defaultHref="home">
+        
+      </ion-back-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="secondary">
 
+  <ion-title>Youth Survey </ion-title>
+  <h4>Survey's answer is {{min}}</h4>
+
+  <ion-list>
+    <ion-radio-group  value="val" [(ngModel)]="min">
+      <ion-list-header >
+        <ion-label >Questions</ion-label>
+      </ion-list-header>
+  
+      <ion-item >
+        <ion-label>Are you Happy being a  Chirtsian</ion-label>
+        <ion-radio slot="start" value="happy"></ion-radio>
+      </ion-item>
+  
+      <ion-item >
+        <ion-label>Are you not Happy to be a christian?</ion-label>
+        <ion-radio slot="start" value="not"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Do you like Youth Training</ion-label>
+        <ion-radio slot="start" value="training"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Do you read the Bible</ion-label>
+        <ion-radio slot="start" value="read"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Do you love God</ion-label>
+        <ion-radio slot="start" value="like"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Do you go to church</ion-label>
+        <ion-radio slot="start" value="church"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Do you like Youth Club</ion-label>
+        <ion-radio slot="start" value="club"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Do you like Religious's events</ion-label>
+        <ion-radio slot="start" value="event"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="youthsurvey()">Save</ion-button>
 </ion-content>
